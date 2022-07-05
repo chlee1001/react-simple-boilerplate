@@ -1,8 +1,8 @@
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
-const {LoaderOptionsPlugin} = require('webpack');
-const RefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { LoaderOptionsPlugin } = require('webpack')
+const RefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 
-const paths = require('./paths');
+const paths = require('./paths')
 
 module.exports = {
   devtool: 'eval',
@@ -12,7 +12,7 @@ module.exports = {
   },
 
   entry: {
-    app: paths.src + '/index.js',
+    app: paths.src + '/index.jsx',
   }, // 입력
   module: {
     rules: [
@@ -22,13 +22,16 @@ module.exports = {
         options: {
           presets: [
             [
-              '@babel/preset-env', {
-              targets: {
-                browsers: ['> 5% in KR', 'last 2 chrome versions'],
+              '@babel/preset-env',
+              {
+                targets: {
+                  browsers: ['> 5% in KR', 'last 2 chrome versions'],
+                },
+                debug: true,
               },
-              debug: true,
-            }],
-            '@babel/preset-react'],
+            ],
+            '@babel/preset-react',
+          ],
           plugins: [
             '@babel/plugin-proposal-class-properties',
             'react-refresh/babel',
@@ -38,7 +41,7 @@ module.exports = {
     ],
   },
   plugins: [
-    new LoaderOptionsPlugin({debug: true}),
+    new LoaderOptionsPlugin({ debug: true }),
     new CleanWebpackPlugin(),
     new RefreshWebpackPlugin(),
   ],
@@ -46,4 +49,4 @@ module.exports = {
     path: paths.build,
     filename: '[name].bundle.js',
   }, // 출력
-};
+}
