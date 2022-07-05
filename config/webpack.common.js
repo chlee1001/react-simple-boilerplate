@@ -5,11 +5,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const paths = require('./paths')
+const path = require('path')
 
 module.exports = {
   devtool: 'eval',
   resolve: {
-    modules: ['node_modules'],
+    modules: ['node_modules', path.resolve('./src')],
     extensions: ['.js', '.jsx', '.json', '.css'],
   },
 
@@ -37,6 +38,20 @@ module.exports = {
           plugins: [
             '@babel/plugin-proposal-class-properties',
             'react-refresh/babel',
+            [
+              'module-resolver',
+              {
+                root: ['./src'],
+                alias: {
+                  '#api': './src/api/',
+                  '#assets': './src/asset/',
+                  '#common': './src/common/',
+                  '#component': './src/component/',
+                  '#constant': './src/constant/',
+                  '#container': './src/container/',
+                },
+              },
+            ],
           ],
           exclude: /node_modules/,
         },

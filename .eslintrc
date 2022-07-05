@@ -23,5 +23,9 @@
     "react"
   ],
   "rules": {
+    "import/no-unresolved": 0,
+    "import/extensions": [
+      "off"
+    ]
   }
 }

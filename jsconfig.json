@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "#api/*": [
+        "./src/api/*"
+      ],
+      "#assets/*": [
+        "./src/assets/*"
+      ],
+      "#common/*": [
+        "./src/common/*"
+      ],
+      "#component/*": [
+        "./src/component/*"
+      ],
+      "#constant/*": [
+        "./src/constant/*"
+      ],
+      "#container/*": [
+        "./src/container/*"
+      ]
+    }
+  }
+}
