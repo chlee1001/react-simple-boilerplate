@@ -1,4 +1,6 @@
-# Simple React Project
+# Simple React Project (22.07.05)
+Create React App 사용을 벗어나 직접 react 프로젝트를 구성하고 필요한 셋팅을 추가한 boilerplate입니다.
+
 
 ## Prerequisites
 
@@ -20,7 +22,7 @@ yarn install
 Webpack dev server runs at `localhost:3001`.
 
 ```bash
-yarn run start
+yarn start
 ```
 
 ### Production build
@@ -38,6 +40,8 @@ yarn build
 - [Babel](https://babeljs.io/)
 
 ## Dependencies
+
+- [styled-components](https://www.npmjs.com/package/styled-components)
 
 ### webpack
 
@@ -81,6 +85,13 @@ yarn build
 - [`eslint-plugin-react`](https://github.com/jsx-eslint/eslint-plugin-react) - React specific linting rules for `ESLint`
 - [`eslint-plugin-react-hooks`](https://www.npmjs.com/package/eslint-plugin-react-hooks) - This ESLint plugin enforces the Rules of Hooks
 - [`prettier`](https://github.com/prettier/prettier) - code formatter
+
+- [`stylelint`](https://stylelint.io/) - Modern linter that helps you avoid errors and enforce conventions in your styles
+- [`stylelint-config-recommended`](https://github.com/stylelint/stylelint-config-recommended) - The recommended shareable config for Stylelint
+- [`stylelint-config-styled-components`](https://github.com/styled-components/stylelint-config-styled-components) - The shareable stylelint config for stylelint-processor-styled-components
+- [`stylelint-processor-styled-components`](https://github.com/styled-components/stylelint-processor-styled-components) - Lint your styled components with `stylelint`!
+- [`@stylelint/postcss-css-in-js`](https://github.com/stylelint/postcss-css-in-js) - PostCSS syntax for parsing CSS in JS
+- [`postcss-syntax`](https://www.npmjs.com/package/postcss-syntax)
 
 ## License
 
