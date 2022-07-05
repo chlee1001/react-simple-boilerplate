@@ -6,6 +6,10 @@
     "start": "webpack serve --config config/webpack.dev.js --env development",
     "build": "webpack --config config/webpack.prod.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chlee1001/simple-react-project.git"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
