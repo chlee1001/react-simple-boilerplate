@@ -1,6 +1,8 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const { LoaderOptionsPlugin } = require('webpack')
 const RefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const paths = require('./paths')
 
@@ -8,7 +10,7 @@ module.exports = {
   devtool: 'eval',
   resolve: {
     modules: ['node_modules'],
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.js', '.jsx', '.json', '.css'],
   },
 
   entry: {
@@ -17,7 +19,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?/,
+        test: /\.js?/,
         loader: 'babel-loader',
         options: {
           presets: [
@@ -36,6 +38,7 @@ module.exports = {
             '@babel/plugin-proposal-class-properties',
             'react-refresh/babel',
           ],
+          exclude: /node_modules/,
         },
       },
     ],
@@ -44,6 +47,12 @@ module.exports = {
     new LoaderOptionsPlugin({ debug: true }),
     new CleanWebpackPlugin(),
     new RefreshWebpackPlugin(),
+    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin({
+      template: paths.public + '/index.html',
+      favicon: paths.public + '/favicon.ico',
+      filename: 'index.html',
+    }),
   ],
   output: {
     path: paths.build,
