@@ -1,4 +1,4 @@
-# Simple React Project (22.07.05)
+# React Simple Boilerplate
 Create React App 사용을 벗어나 직접 react 프로젝트를 구성하고 필요한 셋팅을 추가한 boilerplate입니다.
 
 
