@@ -78,7 +78,7 @@ yarn build
 
 - [`eslint`](https://github.com/eslint/eslint) - Enforce styleguide across application
 - [`eslint-config-airbnb`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb) - Base JS styleguide of Airbnb
-- [`eslint-config-airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) - Base JS styleguide of Airbnb
+- ~~[`eslint-config-airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) - Base JS styleguide of Airbnb~~ **deprecated**
 - [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier) - Implement prettier rules
 - [`eslint-plugin-import`](https://github.com/benmosher/eslint-plugin-import) - Implement import rules
 - [`eslint-plugin-jsx-a11y`](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y) - Static AST checker for accessibility rules on JSX elements
