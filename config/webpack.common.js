@@ -41,12 +41,12 @@ module.exports = {
               {
                 root: ['./src'],
                 alias: {
-                  '#api': './src/api/',
-                  '#assets': './src/asset/',
-                  '#common': './src/common/',
-                  '#component': './src/component/',
-                  '#constant': './src/constant/',
-                  '#container': './src/container/',
+                  '#apis': './src/apis/',
+                  '#assets': './src/assets/',
+                  '#commons': './src/commons/',
+                  '#components': './src/components/',
+                  '#constants': './src/constants/',
+                  '#containers': './src/containers/',
                 },
               },
             ],

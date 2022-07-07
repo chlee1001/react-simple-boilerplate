@@ -2,23 +2,23 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "#api/*": [
-        "./src/api/*"
+      "#apis/*": [
+        "./src/apis/*"
       ],
       "#assets/*": [
         "./src/assets/*"
       ],
-      "#common/*": [
-        "./src/common/*"
+      "#commons/*": [
+        "./src/commons/*"
       ],
-      "#component/*": [
-        "./src/component/*"
+      "#components/*": [
+        "./src/components/*"
       ],
-      "#constant/*": [
-        "./src/constant/*"
+      "#constants/*": [
+        "./src/constants/*"
       ],
-      "#container/*": [
-        "./src/container/*"
+      "#containers/*": [
+        "./src/containers/*"
       ]
     }
   }
