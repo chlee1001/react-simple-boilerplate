@@ -12,7 +12,7 @@ Create React App 사용을 벗어나 직접 react 프로젝트를 구성하고 �
 ### Installation
 
 ```bash
-git clone https://github.com/chlee1001/simple-react-project.git
+git clone https://github.com/chlee1001/react-simple-boilerplate.git
 cd simple-react-project
 yarn install
 ```
